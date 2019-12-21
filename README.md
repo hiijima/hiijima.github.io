@@ -1,4 +1,4 @@
-# profile-site
+# hiijima.github.io
 
 ## Project setup
 ```
@@ -15,9 +15,9 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
+### deploy Github Pages (push master branch)
 ```
-npm run lint
+npm run deploy
 ```
 
 ### Customize configuration
