@@ -38,6 +38,11 @@ export default {
 
 <style>
 /* 各章タイトルの中央よせ */
+@media screen and (max-width: 700px) {
+  aside {
+    display:none;
+  }
+}
 .header-title {
   text-align: center;
 }

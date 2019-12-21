@@ -11,7 +11,7 @@
           <el-row :gutter="20">
             <el-col :span="20" :offset="1">
               <el-table :data="tableData" style="width: 100%">
-                <el-table-column label="Category">
+                <el-table-column label="Category" width="50">
                   <template slot-scope="scope">
                     <img v-for="(icon, index) in scope.row.icons" :src="icon" height="30" :key="index">
                   </template>

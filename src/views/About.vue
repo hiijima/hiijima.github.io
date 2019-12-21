@@ -5,6 +5,9 @@
         <div class="header-title">
           <h2>自己紹介</h2>
           <p>埼玉県熊谷市のフリーランスWebエンジニア</p>
+          <div class="fixed-mobile trim">
+            <img src="@/assets/self.jpg">
+          </div>
         </div>
       </el-header>
       <el-container>
@@ -52,6 +55,14 @@
 </script>
 
 <style scoped>
+.fixed-mobile {
+  display:none;
+}
+@media screen and (max-width: 700px) {
+  .fixed-mobile {
+    display:block;
+  }
+}
 /* profile imageの角取 */
 .trim {
   position:relative;
