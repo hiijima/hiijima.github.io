@@ -1,23 +1,40 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import SmoothScroll from 'vue-smoothscroll'
+import About from '../views/About.vue'
+import Content from '../views/Content'
+import Portfolio from '../views/Portfolio.vue'
+import Skillset from '../views/Skillset.vue'
+import Contact from '../views/Contact.vue'
 
-Vue.use(VueRouter)
+Vue.use(VueRouter, SmoothScroll)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: Home
+    name: 'content',
+    component: Content
   },
   {
     path: '/about',
     name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+    component: About
+  },
+  {
+    path: '/portfolio',
+    name: 'portfolio',
+    component: Portfolio
+  },
+  {
+    path: '/skillset',
+    name: 'skillset',
+    component: Skillset
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: Contact
+  },
 ]
 
 const router = new VueRouter({

@@ -1,32 +1,52 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+
+    <el-container>
+
+      <el-header height="250px">
+        <header-area />
+      </el-header>
+
+      <el-container>
+        <el-aside width="160px">
+          <navigation />
+        </el-aside>
+        <el-container>
+          <el-main>
+            <transition mode="out-in">
+              <router-view />
+            </transition>
+          </el-main>
+          <el-footer></el-footer>
+        </el-container>
+      </el-container>
+
+    </el-container>
   </div>
 </template>
 
+<script>
+import Header from '@/components/Header'
+import Navigation from '@/components/Navigation'
+
+export default {
+  components: {
+    'header-area': Header,
+    'navigation': Navigation,
+  }
+}
+</script>
+
+
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* 各章タイトルの中央よせ */
+.header-title {
   text-align: center;
-  color: #2c3e50;
 }
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.el-row {
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 </style>
