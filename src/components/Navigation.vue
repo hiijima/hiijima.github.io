@@ -1,18 +1,16 @@
 <template>
-  <el-row class="tac">
-    <el-col>
-      <el-menu default-active="1" class="el-menu-vertical-demo" >
-        <el-menu-item
-          v-for="section in sections"
-          @click="doSmoothScroll(section.link)"
-          :key="section.id"
-        >
-          <i :class="section.icon"></i>
-          <span>{{ section.title }}</span>
-        </el-menu-item>
-      </el-menu>
-    </el-col>
-  </el-row>
+  <div class="navmenu">
+    <el-menu class="el-menu-demo" mode="horizontal">
+      <el-menu-item
+        v-for="section in sections"
+        @click="doSmoothScroll(section.link)"
+        :key="section.id"
+      >
+        <i :class="section.icon"></i>
+        <span>{{ section.title }}</span>
+      </el-menu-item>
+    </el-menu>
+  </div>
 </template>
 
 <script>

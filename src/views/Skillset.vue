@@ -11,13 +11,13 @@
           <el-row :gutter="20">
             <el-col :span="20" :offset="1">
               <el-table :data="tableData" style="width: 100%">
-                <el-table-column label="Category" width="200">
+                <el-table-column label="Category">
                   <template slot-scope="scope">
                     <img v-for="(icon, index) in scope.row.icons" :src="icon" height="30" :key="index">
                   </template>
                 </el-table-column>
-                <el-table-column prop="subject" width="200"></el-table-column>
-                <el-table-column prop="overview" label="Overview" width="400"></el-table-column>
+                <el-table-column prop="subject"></el-table-column>
+                <el-table-column prop="overview" label="Overview"></el-table-column>
               </el-table>
             </el-col>
           </el-row>

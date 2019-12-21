@@ -3,14 +3,12 @@
 
     <el-container>
 
-      <el-header height="250px">
+      <el-header height="350px">
         <header-area />
+        <navigation />
       </el-header>
 
       <el-container>
-        <el-aside width="160px">
-          <navigation />
-        </el-aside>
         <el-container>
           <el-main>
             <transition mode="out-in">

@@ -8,7 +8,7 @@
         </div>
       </el-header>
       <el-container>
-        <el-aside width="250px">
+        <el-aside width="150px">
           <div class="trim">
             <img src="@/assets/self.jpg">
           </div>
@@ -56,8 +56,8 @@
 .trim {
   position:relative;
   overflow: hidden;
-  width:200px;
-  height:200px;
+  width:150px;
+  height:150px;
   border-radius:50%;
 }
 .trim img {

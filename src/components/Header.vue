@@ -2,7 +2,7 @@
   <div class="center">
     <img src="@/assets/binary-2910663_1920.jpg" height="240">
 
-    <h1>Hioroaki Iijima's WebSite</h1>
+    <h1>Hioroaki Iijima</h1>
     <p>Software Engineer</p>
   </div>
 </template>
@@ -33,7 +33,7 @@
 .center p {
   position: absolute;/*絶対配置*/
   color: white;/*文字は白に*/
-  top: 65%;
+  top: 70%;
   left: 50%;
   -ms-transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
