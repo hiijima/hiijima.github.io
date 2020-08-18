@@ -2,7 +2,7 @@
   <div class="center">
     <img src="@/assets/binary-2910663_1920.jpg" height="240">
 
-    <h1>Hioroaki Iijima</h1>
+    <h1>Hiroaki Iijima</h1>
     <p>Software Engineer</p>
   </div>
 </template>
